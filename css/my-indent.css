@@ -1,0 +1,82 @@
+/*我的订单详情弹出页*/
+.details-body{
+    border-bottom: 1px solid #2E66BD;
+    margin-bottom: 30px;
+}
+.details-body-fl{
+    text-align: center;
+    border-right: 1px solid #2E66BD;
+    padding: 20px 80px 20px 40px;
+}
+.details-body-fl h3{
+    color: #ff4242;
+    margin-bottom: 20px;
+}
+.details-body-fr{
+    border: 0;
+    text-align: center;
+    padding: 20px 0;
+    margin-left: 100px;
+}
+.details-body-fr li{
+    float: left;
+    border: 0;
+}
+.details-body-fr img{
+    width: 45px;
+}
+/*我的订单取消弹出页*/
+.hint{
+    background-color: #FFFCDB;
+    height: 70px;
+    line-height: 70px;
+    box-sizing: border-box;
+    padding: 2px 20px;
+}
+.hint img{
+    vertical-align: text-top;
+    margin-right: 10px;
+}
+.reason li{
+    height: 36px;
+    width: 187px;
+    line-height: 36px;
+    text-align: center;
+    float: left;
+    margin: 20px 20px 0 10px;
+    cursor: pointer;
+    background-color: #5bc0de;
+    color: #fff;
+}
+div.botton{
+    padding-top: 40px;
+    text-align: center;
+}
+/*我的订单跟踪弹框*/
+.trace{
+    border-left: 3px solid #2E66BD;
+    position: relative;
+}
+.trace h5{
+    font-size: 14px;
+}
+.trace p{
+    font-size: 12px;
+}
+.trace p,.trace h5{
+    margin-left: 20px;
+}
+.dot{
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    background-color: #2E66BD;
+    position: absolute;
+    left: -7px;
+    top: 3px;
+}
+.dot.dot2{
+    position: absolute;
+    left: -7px;
+    top: 50px;
+}

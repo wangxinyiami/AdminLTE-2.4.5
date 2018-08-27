@@ -554,8 +554,9 @@ body {
 	background-color: #5bc0de;
 	color: #fff;
 }
-div.bottom{
+div.botton{
 	padding-top: 40px;
+	text-align: center;
 }
 /*我的订单跟踪弹框*/
 .trace{
