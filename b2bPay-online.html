@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--IE8/9及以后的版本都会以最高版本IE来渲染页面。 --> 
+	<meta http-equiv = "X-UA-Compatible" content = "IE=edge" >   
+    <!--<#include "/common/manage-header.html">-->
+	<script src="./libs/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<link href="css/pay-main.css" rel="stylesheet">
+	<!--<script src="${staticUrl}libs/bootstrap-3.3.7-dist/js/bootstrap-table-data.js"></script>-->
+    <title>列表页</title>
+	<!--<link href="/pay-info/css/pay-main.css" rel="stylesheet">-->
+	<!-- 9 layer弹框js -->
+	<script src="./libs/layer/layer.js"></script>
+	<!-- 9 以下是覆盖layer.js中的css样式，必须放在layer.js下面 -->
+	<link href="./libs/layer/layer-new.css" rel="stylesheet" >
+</head>
+<body>
+	<div class="pt-page">
+		<!-- 头部条 -->
+		<#include "/common/manage-topbar.html"> <!-- 头部条  结束 --> <!--页面中间主体部分-->
+		<div class="pt-root-container">
+			<input type="hidden" id="closeIframe">
+			<!--左侧菜单-->
+			<div class="pt-nav pt-open">
+				<!--菜单头部点击条-->
+				<div class="pt-bar" id="pt-bar">
+					<img src="${staticUrl}src/images/Group15.png" alt="">
+				</div>
+				<!--菜单列表-->
+				<#include "/common/manage-menu.html">
+			</div>
+			<!--左侧菜单 结束-->
+			<!--主视口 -->
+			<div class="pt-view pt-open pt-padding">
+				<div class="container content">
+					<div class="col-sm-12 text-center choose">线上支付</div>
+					<div class="gray"></div>
+					<div class="details">
+						<!-- Nav tabs -->
+						<ul class="nav nav-tabs" role="tablist">
+							<li role="presentation" class="active"><a
+								class="text-center" href="#home" aria-controls="home" role="tab"
+								data-toggle="tab">企业网银</a></li>
+							<li role="presentation"><a class="text-center"
+								href="#personal" aria-controls="personal" role="tab"
+								data-toggle="tab">个人网银</a></li>
+							<li role="presentation"><a class="text-center"
+								href="#together" aria-controls="together" role="tab"
+								data-toggle="tab">聚合支付</a></li>
+						</ul>
+						<!-- Tab panes -->
+						<div class="tab-content">
+							<!-- 企业网银 -->
+							<div role="tabpanel" class="tab-pane active" id="home">
+								<div class="tips">
+									<button class="btn w120 btn-default btn-danger submit-order"
+										onclick="waitItem()">等待按钮</button>
+									<button class="btn w120 btn-default btn-danger submit-order"
+										onclick="lookItem()">支付成功</button>
+									<button class="btn w120 btn-default btn-danger submit-order"
+										onclick="defaultItem()">支付失败</button>
+									<img src="/pay-info/images/tips.png" alt=""> <span>请确认已经插入企业UKEY
+										且正在使用IE浏览器 以便正常使用企业网上银行支付</span>
+								</div>
+								<div class="pay">
+									<div>
+										<a href=""><img src="/pay-info/images/pay1.png" alt=""></a>
+										<a href=""><img src="/pay-info/images/pay2.png" alt=""></a>
+										<a href=""><img src="/pay-info/images/pay3.png" alt=""></a>
+										<a href=""><img src="/pay-info/images/pay4.png" alt=""></a>
+									</div>
+									<div>
+										<a href=""><img src="/pay-info/images/pay5.png" alt=""></a>
+										<a href=""><img src="/pay-info/images/pay6.png" alt=""></a>
+										<a href=""><img src="/pay-info/images/pay7.png" alt=""></a>
+										<a href=""><img src="/pay-info/images/pay8.png" alt=""></a>
+									</div>
+									<div>
+										<a href=""><img src="/pay-info/images/pay9.png" alt=""></a>
+										<a href=""><img src="/pay-info/images/pay10.png" alt=""></a>
+										<a href=""><img src="/pay-info/images/pay11.png" alt=""></a>
+										<a href=""><img src="/pay-info/images/pay12.png" alt=""></a>
+									</div>
+									<div>
+										<a href=""><img src="/pay-info/images/pay13.png" alt=""></a>
+										<a href=""><img src="/pay-info/images/pay14.png" alt=""></a>
+										<a href=""><img src="/pay-info/images/pay15.png" alt=""></a>
+									</div>
+								</div>
+							</div>
+							<!-- 个人网银 -->
+							<div role="tabpanel" class="tab-pane" id="personal">
+								<div class="pay">
+									<div>
+										<a href=""><img src="/pay-info/images/pay1.png" alt=""></a>
+										<a href=""><img src="/pay-info/images/pay2.png" alt=""></a>
+										<a href=""><img src="/pay-info/images/pay3.png" alt=""></a>
+										<a href=""><img src="/pay-info/images/pay4.png" alt=""></a>
+									</div>
+									<div>
+										<a href=""><img src="/pay-info/images/pay5.png" alt=""></a>
+										<a href=""><img src="/pay-info/images/pay6.png" alt=""></a>
+										<a href=""><img src="/pay-info/images/pay7.png" alt=""></a>
+										<a href=""><img src="/pay-info/images/pay8.png" alt=""></a>
+									</div>
+									<div>
+										<a href=""><img src="/pay-info/images/pay9.png" alt=""></a>
+										<a href=""><img src="/pay-info/images/pay10.png" alt=""></a>
+										<a href=""><img src="/pay-info/images/pay11.png" alt=""></a>
+										<a href=""><img src="/pay-info/images/pay12.png" alt=""></a>
+									</div>
+									<div>
+										<a href=""><img src="/pay-info/images/pay13.png" alt=""></a>
+										<a href=""><img src="/pay-info/images/pay14.png" alt=""></a>
+										<a href=""><img src="/pay-info/images/pay15.png" alt=""></a>
+									</div>
+								</div>
+							</div>
+							<!-- 聚合支付 -->
+							<div role="tabpanel" class="tab-pane afcl" id="together">
+								<div class="pt-fl">
+									<div>清单详情</div>
+									<div>
+										缴费清单编号：<span>111202020012</span>
+									</div>
+									<div>
+										总支付：<span class="red">1900.00</span>
+									</div>
+									<div>
+										缴费时间：<span>2018-07-19 11:11:11</span>
+									</div>
+									<div>
+										距离二维码过期还剩<span class="red">40</span>秒，过期后请刷新页面重新获取二维码。
+									</div>
+									<div class="logo">
+										<img src="/pay-info/images/alipay.png" alt=""> <img
+											src="/pay-info/images/wechat.png" alt=""> <img
+											src="/pay-info/images/unionpay.png" alt="">
+									</div>
+								</div>
+								<div class="pt-fl">
+									<div class="code">二维码</div>
+								</div>
+							</div>
+							<div role="tabpanel" class="tab-pane" id="check">
+								<div>清单详情</div>
+								<div>
+									缴费清单编号：<span>111202020012</span>
+								</div>
+								<div>
+									总支付：<span class="red">1900.00</span>
+								</div>
+								<div>
+									缴费时间：<span>2018-07-19 11:11:11</span>
+								</div>
+								<div class="name">—— 天津港航运中心 ——</div>
+								<div>企业名称：天津市人民政府口岸服务办公室</div>
+								<div>办公地址：天津市滨海新区跃进路1号</div>
+								<div>联系人：陈玉龙</div>
+								<div>
+									座机：022-28393675 <span class="tel">手机号：13738968667</span>
+								</div>
+							</div>
+							<div class="mask" style="display: none;" id="paySuccessLayer">
+								<div class="mask-div">
+									<div class="mask-pt-fl">
+										<p>
+											缴费单编号：<span>1231213213112</span>
+										</p>
+										<p>
+											交易流水号：<span>123232121313</span>
+										</p>
+										<p>
+											交易金额：<span class="red">1900.00</span>
+										</p>
+										<p>
+											交易状态：<span>交易成功</span>
+										</p>
+									</div>
+									<div class="mask-pt-fvs">
+										<img src="/pay-info/images/success.png" alt="">
+									</div>
+								</div>
+								<div class="bottom">
+									<button class="btn w120 btn-sm btn-default btn-primary">凭证下载</button>
+									<button class="btn w120 btn-sm btn-default">我的订单</button>
+								</div>
+							</div>
+							<div class="mask" style="display: none;" id="payErrorLayer">
+								<div class="mask-div">
+									<div class="mask-pt-fl">
+										<p>
+											缴费单编号：<span>1231213213112</span>
+										</p>
+										<p>
+											交易流水号：<span>123232121313</span>
+										</p>
+										<p>
+											交易金额：<span class="red">1900.00</span>
+										</p>
+										<p>
+											交易状态：<span>支付失败</span>
+										</p>
+										<p>
+											原因：<span>余额不足</span>
+										</p>
+									</div>
+									<div class="mask-pt-fvs">
+										<img src="/pay-info/images/failed.png" alt="">
+									</div>
+								</div>
+								<div class="bottom">
+									<button class="btn w120 btn-sm btn-danger">继续支付</button>
+								</div>
+							</div>
+						</div>
+						<div class="footer">
+							<img src="/pay-info/images/arrow.png" alt=""><span>选择其他的支付方式</span>
+						</div>
+					</div>
+				</div>
+				<br> <br> <br>
+			</div>
+		</div>
+		<!--主视口 结束-->
+	<!--公共底部-->
+		<#include "/common/manage-footer.html">
+	</div>
+	<script>
+		//支付中
+		function waitItem() {
+			//示范一个公告层
+			layer
+					.open({
+						type : 1,
+						title : false //不显示标题栏
+						,
+						closeBtn : false,
+						area : '300px;',
+						shade : 0.8,
+						id : 'LAY_layuipro' //设定一个id，防止重复弹出
+						,
+						resize : false,
+						btn : [ '查询支付结果' ],
+						btnAlign : 'c',
+						moveType : 1 //拖拽模式，0或者1
+						,
+						content : '<div style="padding: 50px; line-height: 22px; background-color:rgba(20, 50, 72, 1); color: #fff; font-weight: 300;"><span style="font-size:14px">支付中请不要关闭页面！<span></div>',
+						success : function(layero) {
+							//ajax查询支付结果，成功弹出成功页面，失败弹出失败页面。
+						}
+					});
+		}
+		//支付成功
+		function lookItem() {
+			console.log($("#paySuccessLayer").html());
+			layer.open({
+				type : 1,//0（信息框，默认）1（页面层）2（iframe层）3（加载层）4（tips层）
+				title : '<span class="text-color">支付结果</span>',//请修改span中间的内容
+				shadeClose : true,//开启阴影关闭
+				closeBtn : 1, //不显示关闭按钮
+				shade : 0.6,
+				maxmin : false,//开启最大化最小化按钮
+				area : [ '52.5%', '73%' ],//此处可以改为100%，该数值按UI图比例算出
+				content : $("#paySuccessLayer").html()
+			//如果不想出现滚动条['content.html', 'no']
+			});
+		}
+		//支付失败
+		function defaultItem() {
+			layer.open({
+				type : 1,//0（信息框，默认）1（页面层）2（iframe层）3（加载层）4（tips层）
+				title : '<span class="text-color">支付结果</span>',//请修改span中间的内容
+				shadeClose : true,//开启阴影关闭
+				closeBtn : 1, //不显示关闭按钮
+				shade : 0.6,
+				maxmin : false,//开启最大化最小化按钮
+				area : [ '52.5%', '73%' ],//此处可以改为100%，该数值按UI图比例算出
+				content : $("#payErrorLayer").html()
+			//如果不想出现滚动条['content.html', 'no']
+			});
+		}
+	</script>
+</body>
+</html>

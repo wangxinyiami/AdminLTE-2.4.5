@@ -1,0 +1,113 @@
+/*标题部分开始*/
+*{
+    margin: 0;
+    padding: 0;
+}
+i{
+    font-style: normal;
+    display: inline-block;
+}
+li{
+    list-style: none;
+}
+.box-header{
+    /*height: 60px;*/
+    /*line-height: 60px;*/
+    overflow: hidden;
+}
+.box-title-big{
+    box-sizing: border-box;
+    text-align: center;
+    color: #3c8dbc;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+/*标题部分结束*/
+/*支付订单部分*/
+.box-body span{
+    width: 4px;
+    height: 18px;
+    background-color: #3c8dbc;
+    position:absolute;
+    left: 24px;
+    top: 29px;
+}
+.pay,.payment,.content-footer{
+    padding: 20px 40px;
+    position: relative;
+    color: #3c8dbc;
+    width: 100%;
+    /*height: 180px;*/
+    background-color: #FAFAFA;
+}
+.pay-header{
+    margin-bottom: 10px;
+}
+.pay-body ul{
+    float: left;
+    margin-right: 100px;
+    color: #000;
+}
+.pay-body ul li{
+    line-height: 40px;
+    font-size: 14px;
+}
+/*支付订单结束*/
+/*缴费订单开始*/
+.box-body .payment{
+    background-color: #fff;
+    height: 300px;
+}
+.payment-header {
+    margin-bottom: 25px;
+}
+.payment-body{
+    height: 230px;
+}
+.table thead{
+    background-color: #EDF2F6;
+    color: #000;
+}
+table{
+    border: 1px solid #ddd;
+}
+.table th,td{
+    padding:15px 5px;
+    font-size: 12px;
+    text-align: center;
+    color: #000;
+    border: 1px solid #ddd;
+}
+.pagination .active{
+    background-color: #EDF2F6;
+}
+/*缴费订单结束*/
+/*支付方式开始*/
+.box-footer .pull-center{
+    position: absolute;
+    left: 70%;
+    bottom: 10px;
+    margin-left: -30px;
+}
+.content-footer-header{
+    position: relative;
+}
+.content-footer{
+    background-color: #fff;
+}
+.content-footer .content-footer-header span{
+    width: 4px;
+    height: 18px;
+    background-color: #3c8dbc;
+    position: absolute;
+    top: 0;
+    left: -14px;
+}
+/*支付方式结束*/
+.btn-default{
+    margin: 15px 40px;
+}
+.btnbtom{
+    text-align: center;
+}

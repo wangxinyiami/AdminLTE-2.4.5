@@ -1,0 +1,39 @@
+/*搜索部分*/
+section.pt-main{
+    width: 80%;
+    margin: 0 auto;
+}
+.form-group{
+    margin-right: 25px;
+}
+.form-group .form-control{
+    width: 150px;
+    display: inline-block;
+}
+.form-group .form-control.form-option{
+    width: 100px;
+}
+.row{
+    margin-left: 0;
+}
+.row .pt-fr{
+    margin: 20px 60px 20px 0;
+}
+/*表格部分*/
+.table{
+    border: 1px solid #ddd;
+}
+.table td,.table th{
+    border: 1px solid #ddd;
+}
+.tablebtn{
+    width: 260px;
+}
+.pagination .active{
+    background-color: #ABC3CF;
+    color: #fff;
+}
+/*弹框部分*/
+span.text-color{
+    text-align: center;
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- 1 bootstrap基础css -->
+    <link href="./libs/bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" >
+    <!-- 2 table表格css -->
+    <link href="./libs/bootstrap-3.3.7-dist/css/bootstrap-table.min.css" rel="stylesheet" >
+    <!-- 3 treeview树css -->
+    <link href="./libs/bootstrap-3.3.7-dist/css/bootstrap-treeview.min.css" rel="stylesheet" >
+    <!-- 4 datetimepicker时间选择css -->
+    <link href="./libs/bootstrap-3.3.7-dist/css/bootstrap-datetimepicker.min.css" rel="stylesheet" >
+    <!-- 5 select选择框css -->
+    <link href="./libs/bootstrap-3.3.7-dist/css/bootstrap-select.css" rel="stylesheet" >
+    <!-- 6 fileinput上传文件css -->
+    <link href="./libs/bootstrap-3.3.7-dist/css/fileinput.min.css" rel="stylesheet" >
+    <!-- 7 icheck单选+多选css -->
+    <link href="./libs/bootstrap-3.3.7-dist/css/icheck-blue.css" rel="stylesheet">
+    <!-- 8 Validator验证css -->
+    <link href="./libs/bootstrap-3.3.7-dist/css/bootstrapValidator.min.css" rel="stylesheet" >
+    <!-- 9 layer弹框css -->
+    <link href="./libs/layer/layer-new.css" rel="stylesheet" >
+    <!-- 10 引入字体css -->
+    <link href="./libs/bootstrap-3.3.7-dist/fonts/iconfont.css" rel="stylesheet">
+    <!-- 11 页面样式css -->
+    <link href="./src/css/pt-main.css" rel="stylesheet" >
+    <link href="css/pay-main.css" rel="stylesheet">
+
+    <!-- 优先引入jquery1.12.4版本 -->
+    <script src="./libs/jquery/jquery-1.12.4.js"></script>
+    <!-- 1 bootstrap基础js -->
+    <script src="./libs/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <!-- 2 table表格js -->
+    <script src="./libs/bootstrap-3.3.7-dist/js/bootstrap-table.min.js"></script>
+    <!-- 2 table列表数据js 可删除？ -->
+    <script src="./libs/bootstrap-3.3.7-dist/js/bootstrap-table-data.js"></script>
+    <!-- 3 treeview树js -->
+    <script src="./libs/bootstrap-3.3.7-dist/js/bootstrap-treeview.js"></script>
+    <!-- 4 datetimepicker时间选择js -->
+    <script src="./libs/bootstrap-3.3.7-dist/js/bootstrap-datetimepicker.js"></script>
+    <!-- 5 select选择框js -->
+    <script src="./libs/bootstrap-3.3.7-dist/js/bootstrap-select.min.js"></script>
+    <!-- 6 fileinput上传文件js -->
+    <script src="./libs/bootstrap-3.3.7-dist/js/fileinput.min.js"></script>
+    <!-- 6 fileinput中文包js -->
+    <script src="./libs/bootstrap-3.3.7-dist/js/fileinput_locale_zh.js"></script>
+    <!-- 7 icheck单选+多选js -->
+    <script src="./libs/bootstrap-3.3.7-dist/js/icheck.min.js"></script>
+    <!-- 8 Validator验证js -->
+    <script src="./libs/bootstrap-3.3.7-dist/js/bootstrapValidator.min.js"></script>
+    <!-- 9 layer弹框js -->
+    <script src="./libs/layer/layer.js"></script>
+    <!-- 11 页面js -->
+    <script src="./src/js/main.js"></script>
+</head>
+<body>
+<div class="pt-view pt-open pt-padding">
+    <div class="container content">
+        <div class="col-sm-12 text-center choose">线下支付</div>
+        <div class="gray"></div>
+        <div class="details">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a
+                        class="text-center" href="#home" aria-controls="home" role="tab"
+                        data-toggle="tab">线下汇款</a></li>
+                <li role="presentation"><a class="text-center"
+                                           href="#personal" aria-controls="personal" role="tab"
+                                           data-toggle="tab">支票</a></li>
+                <li role="presentation"><a class="text-center"
+                                           href="#together" aria-controls="together" role="tab"
+                                           data-toggle="tab">信用证</a></li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <!-- 线下支付 -->
+                <div role="tabpanel" class="tab-pane active" id="home">
+                    <div class="tips">
+                        <p>汇款方式：<span>线下汇款</span></p>
+                        <p>账期：<span>3天</span></p>
+                        <p class="attention"><i><img src="src/images/tips.png" /> </i><span>尊敬的客户您好，线下汇款请点击“打印缴费单”，请携带缴费清单至银行网点办理</span></p>
+                        <button type="button" class="btn w200 btn-lg btn-default btn-danger btn-print" onclick="offlineItem(0)">确认并获取汇款识别码</button>
+                        <span>汇款时将与柜台说明，将清单中的业务编号填写至汇款单“用途”栏</span>
+                    </div>
+                </div>
+                <!-- 支票 -->
+                <div role="tabpanel" class="tab-pane" id="personal">
+                    <div class="tips">
+                        <h4>收票地址</h4>
+                        <h5>----天津港航运中心----</h5>
+                        <p>企业名称：天津市人民政府口岸服务办公室</p>
+                        <p>办公地址：天津市滨海新区跃进路1号</p>
+                        <p>联系人：陈玉龙</p>
+                        <p>座机：022-28393675</p>
+                        <p>手机号：137389686677</p>
+                    </div>
+                </div>
+                <!-- 信用支付 -->
+                <div role="tabpanel" class="tab-pane afcl" id="together">
+                    <div class="tips">
+                        <p>汇款方式：<span>信用交易</span></p>
+                        <p>确认后，请在线下进行信用交易。</p>
+                        <p class="attention"><i><img src="src/images/tips.png" /> </i><span>尊敬的客户您好，线下汇款请点击“打印缴费单”，请携带缴费清单至银行网点办理</span></p>
+                        <button type="button" class="btn w200 btn-lg btn-default btn-danger btn-print" onclick="printItem(0)">打印清单</button>
+                        <span>信用交易时将与柜员说明，将清单中的业务编号填写至汇款单"用途"栏，完成汇款后，请将缴费单号及汇款底单上传至平台。</span>
+                    </div>
+                </div>
+                <div class="mask" style="display: none;" id="payOfflineLayer">
+                    <div class="mask-div">
+                        <p>您的汇款验证码12345678901 已发送手机182****8664 <a> 发送到其他手机 </a></p>
+                        <p>1. 您的汇款识别码为:12345678901，线下公司转账需提示银行柜台人员将此汇款识别码填写至电汇凭证的【汇款用途】、【附言】、【摘要】栏内。
+                        </p>
+                        <p class="smal">（提醒：因不同银行备注字段不同，最好是将所有的可填写备注的地方都填写上清单编号）。</p>
+                        <p>2.线下公司转账订单，请按照支付订单金额进行转账，请勿多转账或者少转账</p>
+                        <div class="account-info">
+                            <p>天津市人民政府口岸办公室</p>
+                            <p>收款银行 ：招商银行</p>
+                            <p>收款账户（人名币）：1109 0759 7010 206</p>
+                            <p>收款账户（美金）：1109 0759 7010 207</p>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mask" style="display: none;" id="payPrintLayer">
+                    <div class="mask-div">
+                        <p>1. 您的清单编号为: 76854523191，线下公司转账需提示银行柜台人员将此汇款识别码填写至电汇凭证的【汇款用途】、【附言】、【摘要】栏内。</p>
+                        <p class="smal">（提醒：因不同银行备注字段不同，最好是将所有的可填写备注的地方都填写上汇款识别码）</p>
+                        <p>2.线下公司转账订单，请按照支付订单金额进行转账，请勿多转账或者少转账</p>
+                        <p>3.请在7天内付清款项，超过10天未对账系统自动会取消缴费单。到账周期为3个工作日</p>
+                        <p>注意事项：汇款选择同行转款可减免手续费，现支持如下银行，汇款时需要注意以下信息，请牢记！</p>
+                        <div class="bank-info clearfix">
+                            <div class="account-info pt-fl">
+                                <h4>农商银行</h4>
+                                <p>户名：天津市人民政府口岸服务办公室</p>
+                                <p>账户：1109 0759 7010 206</p>
+                                <p>开户行：招商银行北京青年路支行</p>
+                                <p>联行号：0981 0000 5545 （ 非必填项）</p>
+                                <p>汇付识别码：JF76854523191</p>
+                                <p>缴费单号：76854523191</p>
+                            </div>
+                            <div class="account-info pt-fl">
+                                <h4>工商银行</h4>
+                                <p>户名：天津市人民政府口岸服务办公室</p>
+                                <p>账户：1109 0759 7010 206</p>
+                                <p>开户行：工商银行北京青年路支行</p>
+                                <p>联行号：5081 0000 5545 （ 非必填项）</p>
+                                <p>汇付识别码：JF76854523191</p>
+                                <p>缴费单号：76854523191</p>
+                            </div>
+                            <div class="account-info pt-fl">
+                                <h4>建设银行</h4>
+                                <p>户名：天津市人民政府口岸服务办公室</p>
+                                <p>账户：1109 0759 7010 206</p>
+                                <p>开户行：建设银行北京青年路支行</p>
+                                <p>联行号：4071 0000 5545 （ 非必填项）</p>
+                                <p>汇付识别码：JF76854523191</p>
+                                <p>缴费单号：76854523191</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="footer">
+                <img src="/pay-info/images/arrow.png" alt=""><span>选择其他的支付方式</span>
+            </div>
+        </div>
+    </div>
+    <br> <br> <br>
+</div>
+</div>
+<script>
+    //线下支付
+    function offlineItem() {
+        console.log($("#payOfflineLayer").html());
+        layer.open({
+            type : 1,//0（信息框，默认）1（页面层）2（iframe层）3（加载层）4（tips层）
+            title : '<span class="text-color">注意事项：汇款时需要注意以下信息，请牢记！</span>',//请修改span中间的内容
+            shadeClose : true,//开启阴影关闭
+            closeBtn : 1, //不显示关闭按钮
+            shade : 0.6,
+            maxmin : false,//开启最大化最小化按钮
+            area : [ '52.5%', '60%' ],//此处可以改为100%，该数值按UI图比例算出
+            content : $("#payOfflineLayer").html()
+            //如果不想出现滚动条['content.html', 'no']
+        });
+    }
+    //信用交易
+    function printItem() {
+        layer.open({
+            type : 1,//0（信息框，默认）1（页面层）2（iframe层）3（加载层）4（tips层）
+            title : '<span class="text-color">注意事项：汇款时需要注意以下信息，请牢记！</span>',//请修改span中间的内容
+            shadeClose : true,//开启阴影关闭
+            closeBtn : 1, //不显示关闭按钮
+            shade : 0.6,
+            maxmin : false,//开启最大化最小化按钮
+            area : [ '72.5%', '73%' ],//此处可以改为100%，该数值按UI图比例算出
+            content : $("#payPrintLayer").html()
+            //如果不想出现滚动条['content.html', 'no']
+        });
+    }
+</script>
+</body>
+</html>

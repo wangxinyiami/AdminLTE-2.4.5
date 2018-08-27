@@ -1,0 +1,587 @@
+/******************************************************
+                        content 页
+ ******************************************************/
+
+/***************************** body背景色 ****************************/
+body {
+	background: #f2f2f2;
+}
+
+.content .choose {
+	height: 60px;
+	line-height: 60px;
+	color: #3266bc;
+	font-size: 24px;
+	background: #fff;
+	border-top: 2px solid #3266bc;
+}
+
+.content .gray {
+	height: 30px;
+}
+.content .details {
+	background-color: #fafafa;
+	padding-top: 30px;
+}
+
+.content .nav-tabs {
+	font-size: 16px;
+	background-color: #fafafa;
+	padding-left: 20px;
+	border: 1px solid #fafafa;
+	padding-top: 30px;
+}
+
+.content .nav-tabs a {
+	color: #000;
+	width: 145px;
+	height: 40px;
+	background-color: rgba(232, 244, 255, 0.45);
+	border: solid 1px rgba(79, 156, 244, 0.45);
+	margin: 0;
+	border-radius: 0;
+	border-left: 0;
+}
+
+.content .nav-tabs .active {
+	border: solid 1px rgba(79, 156, 244, 0.45);
+	border-bottom: 0;
+	border-left: 0;
+}
+
+.content .nav-tabs>li.active>a, .content .nav-tabs>li.active>a:hover,
+	.content .nav-tabs>li.active>a:focus {
+	background-color: #fff;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus
+	{
+	border: 0;
+}
+/***************
+企业网银
+ *************/
+.content .tips {
+	font-size: 14px;
+	color: rgba(236, 49, 49, 0.87)
+}
+
+.content .tab-content>div {
+	padding-top: 30px;
+	min-height: 500px;
+}
+
+.content .tab-content .pay {
+	margin-top: 30px;
+	background: #FAFAFA;
+}
+
+.content .footer {
+	border-top: solid 1px rgba(221, 221, 221, 0.54);
+	height: 50px;
+	line-height: 50px;
+	color: #3266bc;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.content .tips, .content .pay, .content .footer {
+	margin-left: 40px;
+}
+
+.content .tips img {
+	position: relative;
+	top: -2px;
+	margin-right: 8px;
+}
+
+.content .pay a {
+	width: 260px;
+	display: inline-block;
+	margin-bottom: 35px;
+}
+
+.content .pay img {
+	height: 41px;
+}
+
+.content .footer img {
+	position: relative;
+	top: -1px;
+	margin-right: 8px;
+}
+/**************
+线下汇款
+***************/
+.content #underline {
+	padding-left: 40px;
+	position: relative;
+}
+
+.content #underline>div {
+	line-height: 30px;
+}
+
+.content #underline>div span {
+	font-size: 16px;
+}
+
+.content #underline .red-word {
+	color: #EE6869;
+	margin-left: 8px;
+	font-size: 14px;
+	position: relative;
+	top: 2px;
+}
+
+.content #underline .print {
+	width: 125px;
+	height: 35px;
+	line-height: 35px;
+	background: #3266BC;
+	font-size: 18px;
+	letter-spacing: 1px;
+	color: #fff;
+	text-align: center;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+.content #underline .explain {
+	margin-top: 15px;
+}
+
+.mask {
+	min-width: 635px;
+	height: 350px;
+	border-top: 2px solid #3266bc;
+	box-shadow: 0 0 8px rgba(70, 121, 206, 0.2);
+	padding: 10px 40px 20px 25px;
+	box-sizing: border-box;
+	position: absolute;
+	left: 50%;
+	top: 35px;
+	margin-left: -318px;
+	background: #fff;
+	display: none;
+}
+
+.payType {
+	height: 200px;
+	margin-top: -205px;
+}
+
+.close-mask {
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	cursor: pointer;
+}
+
+#underline .mask .title {
+	border-bottom: 1px solid #EEEEEE;
+	line-height: 42px;
+	font-size: 18px;
+	color: #3266BC;
+}
+
+#underline .mask span {
+	display: inline-block;
+	width: 5px;
+	height: 20px;
+	background: #3266BC;
+	margin-right: 10px;
+	position: relative;
+	top: 3px;
+}
+
+#underline .mask .near {
+	line-height: 17px;
+}
+
+#underline .mask .margin {
+	margin-top: 17px;
+}
+
+#underline .mask .info {
+	line-height: 25px;
+	font-size: 18px;
+	color: #3266BB;
+}
+
+/**************
+聚合支付
+**************/
+.content #together .pt-fl:nth-of-type(1) {margin-bottom：100px;
+	line-height: 30px;
+	margin-left: 40px;
+	margin-right: 140px;
+}
+
+.content #together .logo img {
+	width: 55px;
+	height: 55px;
+	margin-right: 40px;
+}
+
+.content #together .pt-fl:nth-of-type(1) span {
+	font-size: 16px;
+}
+
+.content #together .red {
+	color: #EE5959;
+}
+
+.content #together .logo img:nth-of-type(3) {
+	width: 89px;
+}
+
+.content #together .logo {
+	margin-top: 80px;
+	margin-bottom: 150px;
+}
+
+.content #together .code {
+	width: 285px;
+	height: 285px;
+	background-color: #3266bc;
+	text-align: center;
+	color: #fff;
+	line-height: 285px;
+	font-size: 26px;
+	margin-top: 35px;
+}
+
+/**************
+支票
+**************/
+.content #check {
+	padding-left: 40px;
+}
+
+.content #check div {
+	line-height: 30px;
+}
+
+.content #check div.name {
+	font-size: 22px;
+	font-weight: bold;
+	margin: 20px 0 30px 0;
+}
+
+.content #check .tel {
+	margin-left: 150px;
+}
+/******************************************************
+                        支付信息确认pay页
+ ******************************************************/
+.pay {
+	background: #fff;
+	position: relative;
+}
+
+.pay .confirm {
+	height: 60px;
+	line-height: 60px;
+	color: #3266bc;
+	font-size: 24px;
+	border-top: 2px solid #3266bc;
+}
+/***************  
+支付订单
+****************/
+.pay .order {
+	padding: 30px 0 20px 20px;
+	background: #fafafa;
+	line-height: 30px;
+}
+
+.pay .order span {
+	/*  font-size: 16px;*/
+	
+}
+
+.pay .order .pt-fl {
+	width: 350px;
+}
+
+.pay .order .price {
+	color: rgba(236, 49, 49, 0.87);
+}
+
+.pay .title {
+	border-left: 4px solid #3266bc;
+	padding-left: 10px;
+	font-size: 18px;
+	color: #3266bc;
+	line-height: 20px;
+	margin-bottom: 12px;
+}
+
+.pay .bill .title {
+	margin-bottom: 23px;
+}
+/***************  
+缴费清单
+****************/
+.pay .bill {
+	padding: 25px 20px 40px 20px;
+}
+
+.pay  table {
+	width: 100%;
+	border: 1px solid #DDDDDD;
+	text-align: center;
+}
+
+.pay  table th {
+	font-size: 14px;
+	color: #000;
+	background: #edf2f6;
+}
+
+.pay  table th, .pay  table td {
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+
+.pay .pages {
+	text-align: center;
+	margin-top: 30px;
+}
+
+.pay .pages>* {
+	display: inline-block;
+	margin: 0 2px;
+}
+
+.pay .pages>span {
+	color: #3266bc;
+}
+
+.pay .pages div {
+	border-radius: 3px;
+	height: 25px;
+	border: solid 1px rgba(0, 0, 0, 0.1);
+	line-height: 25px;
+}
+
+.pay .pages div.big-btn {
+	width: 60px;
+	color: #999999;
+}
+
+.pay .pages div.mid-btn {
+	width: 40px;
+}
+
+.pay .pages div.small-btn {
+	width: 25px;
+}
+
+.pay .pages div.active {
+	background-color: #3266bc;
+	color: #fff;
+}
+/***************  
+支付方式
+****************/
+.pay .pay-method {
+	margin-left: 25px;
+	margin-right: 25px;
+	padding-bottom: 80px;
+	padding-top: 25px;
+	border-top: solid 1px #dddddd;
+}
+
+.pay .pay-method .method {
+	width: 130px;
+	height: 40px;
+	line-height: 40px;
+	background-color: #ffffff;
+	border: solid 1px #3266bc;
+	text-align: center;
+	font-size: 18px;
+	margin: 8px 40px 0px 10px;
+}
+
+.pay .pay-method .method:nth-of-type(1) {
+	position: relative;
+}
+
+.pay .pay-method .method:nth-of-type(2) {
+	position: relative;
+}
+
+.pay .spe img {
+	position: absolute;
+	bottom: -1px;
+	right: -1px;
+}
+
+.pay .submit {
+	text-align: center;
+}
+
+.clickCursor {
+	cursor: pointer;
+}
+
+.pay .submit>div {
+	width: 130px;
+	height: 40px;
+	border-radius: 2px;
+	border: solid 1px #666666;
+	line-height: 40px;
+	text-align: center;
+	font-size: 18px;
+	display: inline-block;
+	margin: 0 15px 45px 15px;
+	cursor: pointer;
+}
+
+.pay .submit>div.submit-order {
+	background-color: #ec3131;
+	border: none;
+	color: #fff;
+}
+
+
+.mask{
+	width: 100%;
+}
+.mask-div{
+	width: 100%;
+	padding: 20px;
+}
+.mask-pt-fl{
+	font-size:16px;
+	float: left;
+	padding-left: 250px;
+	padding-top: 100px;
+}
+
+.mask-pt-fvs{
+	padding-top: 100px;
+}
+
+.bottom {
+	padding-top:100px;
+	text-align: center;
+}
+/*线下支付*/
+.tab-content .tab-pane .tips{
+	color: #333;
+}
+.mask-div .account-info{
+	background-color: #3c8dbc;
+	color: #fff;
+	margin: 20px 10px;
+	text-align: center;
+}
+.mask-div .account-info p{
+	font-size: 16px;
+}
+.mask-div p{
+	font-size: 14px;
+}
+.mask-div .smal{
+	font-size: 12px;
+}
+
+/***************
+我的订单
+****************/
+.form-control.form-option{
+	width: 200px;
+	display: inline-block;
+	margin: 20px 0;
+}
+.pt-fotter{
+	padding-left: 50%;
+	margin-bottom: 20px;
+}
+.table,.table th,.table td{
+	border: 1px solid #ddd;
+}
+/*我的订单详情弹出页*/
+.details-body{
+	border-bottom: 1px solid #2E66BD;
+	margin-bottom: 30px;
+}
+.details-body-fl{
+	text-align: center;
+	border-right: 1px solid #2E66BD;
+	padding: 20px 80px 20px 40px;
+}
+.details-body-fl h3{
+	color: #ff4242;
+	margin-bottom: 20px;
+}
+.details-body-fr{
+	border: 0;
+	text-align: center;
+	padding: 20px 0;
+	margin-left: 100px;
+}
+.details-body-fr li{
+	float: left;
+	border: 0;
+}
+.details-body-fr img{
+	width: 45px;
+}
+/*我的订单取消弹出页*/
+.hint{
+	background-color: #FFFCDB;
+	height: 70px;
+	line-height: 70px;
+	box-sizing: border-box;
+	padding: 2px 20px;
+}
+.hint img{
+	vertical-align: text-top;
+	margin-right: 10px;
+}
+.reason li{
+	height: 36px;
+	width: 187px;
+	line-height: 36px;
+	text-align: center;
+	float: left;
+	margin: 20px 20px 0 10px;
+	cursor: pointer;
+	background-color: #5bc0de;
+	color: #fff;
+}
+div.bottom{
+	padding-top: 40px;
+}
+/*我的订单跟踪弹框*/
+.trace{
+	border-left: 3px solid #2E66BD;
+	position: relative;
+}
+.trace h5{
+	font-size: 14px;
+}
+.trace p{
+	font-size: 12px;
+}
+.trace p,.trace h5{
+	margin-left: 20px;
+}
+.dot{
+	width: 12px;
+	height: 12px;
+	border-radius: 6px;
+	background-color: #2E66BD;
+	position: absolute;
+	left: -7px;
+	top: 3px;
+}
+.dot.dot2{
+	position: absolute;
+	left: -7px;
+	top: 50px;
+}
