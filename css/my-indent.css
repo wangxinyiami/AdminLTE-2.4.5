@@ -37,17 +37,27 @@
     vertical-align: text-top;
     margin-right: 10px;
 }
-.reason li{
+.reason ul{
     height: 36px;
-    width: 187px;
+    /*width: 187px;*/
     line-height: 36px;
     text-align: center;
-    float: left;
+    /*float: left;*/
     margin: 20px 20px 0 10px;
     cursor: pointer;
+    /*background-color: #5bc0de;*/
+    /*color: #fff;*/
+}
+
+.reason li{
+    width: 187px;
+    text-align: center;
+    margin: 20px 20px 70px 10px;
+    display: inline-block;
     background-color: #5bc0de;
     color: #fff;
 }
+
 div.botton{
     padding-top: 40px;
     text-align: center;

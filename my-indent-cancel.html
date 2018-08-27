@@ -54,24 +54,27 @@
     <script src="./src/js/main.js"></script>
 </head>
 <body>
-    <div class="hint">
-        <i><img src="src/images/tips.png"></i>
-        <span>订单取消成功后将无法恢复！</span>
-    </div>
-    <div class="reason container-fluid" id="each">
-        <ul class="clearfix row">
-            <li class="col-md-6">重复下单</li>
-            <li class="col-md-6">不想继续交易</li>
-        </ul>l
-        <ul class="clearfix row">
-            <li class="col-md-6">收费方账户信息有误</li>
-            <li class="col-md-6">想重新选择清单</li>
-        </ul>
-    </div>
-    <div class="botton">
-        <button type="button" class="btn w120 btn-sm btn-default btn-primary">再想想</button>
-        <input type="submit" class="btn w120 btn-sm btn-default btn-danger" value="提交">
-    </div>
+<div class="hint">
+    <i><img src="src/images/tips.png"></i>
+    <span>订单取消成功后将无法恢复！</span>
 </div>
+<div class="reason" id="each">
+    <ul class="clearfix row">
+        <li class="btn">重复下单</li>
+        <li class="btn">不想继续交易</li>
+        <li class="btn">收费方账户信息有误</li>
+        <li class="btn">想重新选择清单</li>
+    </ul>
+</div>
+<div class="botton">
+    <button type="button" class="btn w120 btn-sm btn-default btn-primary">再想想</button>
+    <input type="submit" class="btn w120 btn-sm btn-default btn-danger" value="提交">
+</div>
+</div>
+<script>
+    $(document).on("click", "#each li", function () {
+        $(this).css("background", "#666").siblings().css("background", "#5bc0de");
+    });
+</script>
 </body>
 </html>
