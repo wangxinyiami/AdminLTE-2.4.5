@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- 1 bootstrap基础css -->
+    <link href="./libs/bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
+    <!-- 2 table表格css -->
+    <link href="./libs/bootstrap-3.3.7-dist/css/bootstrap-table.min.css" rel="stylesheet">
+    <!-- 3 treeview树css -->
+    <link href="./libs/bootstrap-3.3.7-dist/css/bootstrap-treeview.min.css" rel="stylesheet">
+    <!-- 4 datetimepicker时间选择css -->
+    <link href="./libs/bootstrap-3.3.7-dist/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <!-- 5 select选择框css -->
+    <link href="./libs/bootstrap-3.3.7-dist/css/bootstrap-select.css" rel="stylesheet">
+    <!-- 6 fileinput上传文件css -->
+    <link href="./libs/bootstrap-3.3.7-dist/css/fileinput.min.css" rel="stylesheet">
+    <!-- 7 icheck单选+多选css -->
+    <link href="./libs/bootstrap-3.3.7-dist/css/icheck-blue.css" rel="stylesheet">
+    <!-- 8 Validator验证css -->
+    <link href="./libs/bootstrap-3.3.7-dist/css/bootstrapValidator.min.css" rel="stylesheet">
+    <!-- 9 layer弹框css -->
+    <link href="./libs/layer/layer-new.css" rel="stylesheet">
+    <!-- 10 引入字体css -->
+    <link href="./libs/bootstrap-3.3.7-dist/fonts/iconfont.css" rel="stylesheet">
+    <!-- 11 页面样式css -->
+    <link href="css/pt-main.css" rel="stylesheet">
+    <link href="css/my-indent.css" rel="stylesheet" >
+    <!-- 优先引入jquery1.12.4版本 -->
+    <script src="./libs/jquery/jquery-1.12.4.js"></script>
+    <!-- 1 bootstrap基础js -->
+    <script src="./libs/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <!-- 2 table表格js -->
+    <script src="./libs/bootstrap-3.3.7-dist/js/bootstrap-table.min.js"></script>
+    <!-- 2 table列表数据js 可删除？ -->
+    <script src="./libs/bootstrap-3.3.7-dist/js/bootstrap-table-data.js"></script>
+    <!-- 3 treeview树js -->
+    <script src="./libs/bootstrap-3.3.7-dist/js/bootstrap-treeview.js"></script>
+    <!-- 4 datetimepicker时间选择js -->
+    <script src="./libs/bootstrap-3.3.7-dist/js/bootstrap-datetimepicker.js"></script>
+    <!-- 5 select选择框js -->
+    <script src="./libs/bootstrap-3.3.7-dist/js/bootstrap-select.min.js"></script>
+    <!-- 6 fileinput上传文件js -->
+    <script src="./libs/bootstrap-3.3.7-dist/js/fileinput.min.js"></script>
+    <!-- 6 fileinput中文包js -->
+    <script src="./libs/bootstrap-3.3.7-dist/js/fileinput_locale_zh.js"></script>
+    <!-- 7 icheck单选+多选js -->
+    <script src="./libs/bootstrap-3.3.7-dist/js/icheck.min.js"></script>
+    <!-- 8 Validator验证js -->
+    <script src="./libs/bootstrap-3.3.7-dist/js/bootstrapValidator.min.js"></script>
+    <!-- 9 layer弹框js -->
+    <script src="./libs/layer/layer.js"></script>
+    <!-- 11 页面js -->
+    <script src="./src/js/main.js"></script>
+
+</head>
+<body>
+<!--我的订单详情-->
+    <div class="pt-padding">
+        <div class="details-body clearfix">
+            <div class="pt-fl details-body-fl">
+                <p>订单号：2492592593</p>
+                <h3>等待付款</h3>
+                <button type="button" class="btn w120 btn-default btn-danger">付款</button>
+            </div>
+            <div class="pt-fl details-body-fr">
+                <ul class="clearfix">
+                    <li>
+                        <img src="icon_7r5dcj7rngh/computer.png">
+                        <p>提交订单</p>
+                        <p>2018-08-11</p>
+                        <p>12:00</p>
+                    </li>
+                    <li><img src="icon_7r5dcj7rngh/more.png"/></li>
+                    <li>
+                        <img src="icon_7r5dcj7rngh/paysuccess.png">
+                        <p>支付成功</p>
+                        <p>2018-08-11</p>
+                        <p>12:00</p>
+                    </li>
+                    <li><img src="icon_7r5dcj7rngh/more.png"/></li>
+                    <li>
+                        <img src="icon_7r5dcj7rngh/money.png">
+                        <p>到账成功</p>
+                        <p>2018-08-11</p>
+                        <p>12:00</p>
+                    </li>
+                    <li><img src="icon_7r5dcj7rngh/more.png"/></li>
+                    <li>
+                        <img src="icon_7r5dcj7rngh/finished.png">
+                        <p>交易完成</p>
+                        <p>2018-08-11</p>
+                        <p>12:00</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <table border="1" cellpadding="0" cellspacing="0" class="table">
+            <thead>
+            <tr>
+                <th>缴费清单号</th>
+                <th>结算方式</th>
+                <th>企业名称（缴费方）</th>
+                <th>开户行名称（缴费方）</th>
+                <th>统一社会信用代码（缴费方）</th>
+                <th>企业名称（收费方）</th>
+                <th>开户行名称（收费方）</th>
+                <th>统一社会信用代码（收费方）</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th>11111111111111</th>
+                <th>现金</th>
+                <th>中石化</th>
+                <th>工商银行</th>
+                <th>1111</th>
+                <th>中石油</th>
+                <th>工商银行</th>
+                <th>1111</th>
+                <th>
+                    <button class="RoleOflook btn btn-xs btn-link"><img src="icon_7r5dcj7rngh/search.png"
+                                                                        style="width: 25px;"/></button>
+                </th>
+            </tr>
+            <tr>
+                <th>11111111111111</th>
+                <th>现金</th>
+                <th>中石化</th>
+                <th>工商银行</th>
+                <th>1111</th>
+                <th>中石油</th>
+                <th>工商银行</th>
+                <th>1111</th>
+                <th>
+                    <button class="RoleOflook btn btn-xs btn-link"><img src="icon_7r5dcj7rngh/search.png"
+                                                                        style="width: 25px;"/></button>
+                </th>
+            </tr>
+            </tbody>
+        </table>
+        <div class="box-footer payment-footer clearfix">
+            <ul class="pagination pagination-sm no-margin pull-right">
+                <!--<li><span>总共<i>23条</i>/<i>10页</i></span></li>-->
+                <li><a href="#">上一页</a></li>
+                <li><a href="#" class="active">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">下一页</a></li>
+                <!--<li><a href="#"></a></li>-->
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
