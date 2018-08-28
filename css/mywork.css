@@ -1,0 +1,25 @@
+.box{
+    padding: 10px 10px 30px 10px;
+    border: 1px solid #3c8dbc;
+    font-size: 14px;
+}
+.box h4{
+    position: relative;
+}
+.box h4 span{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.box li{
+    border-bottom: 2px solid #3c8dbc;
+    line-height: 30px;
+}
+.box li a{
+    color: #000;
+}
+.box img{
+    width: 20px;
+    margin-right: 10px;
+    vertical-align: text-top;
+}
